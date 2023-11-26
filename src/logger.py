@@ -1,5 +1,7 @@
 import warnings
 
+
+
 def custom_warning_function(x):
     if x < 0:
         warnings.warn("This is a custom warning: x is negative", UserWarning)

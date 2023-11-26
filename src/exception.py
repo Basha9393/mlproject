@@ -1,5 +1,12 @@
 import sys
-from logger import logging
+from src.logger import logging
+import warnings
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")  # Ignore the custom warning
+    # Your code that raises the warning
+
+
 
 def error_message_detail(error, error_detail: Exception):
     _, _, exc_tb = error_detail.__traceback__
