@@ -1,3 +1,16 @@
+import warnings
+
+def custom_warning_function(x):
+    if x < 0:
+        warnings.warn("This is a custom warning: x is negative", UserWarning)
+
+def process_value(x):
+    custom_warning_function(x)
+    # Some processing logic here...
+
+# Test the warning
+value = -5
+process_value(value)
 
 import logging
 import os
@@ -16,9 +29,6 @@ logging.basicConfig(
 
 )
 
-
-if __name__=="__main__":
-    logging.info("Logging has started")
 
 
 
