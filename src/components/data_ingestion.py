@@ -2,7 +2,7 @@ import os
 import sys
 from src.exception import CustomException
 from src.logger import logging  # Example assuming 'logger.py' is inside 'src' directory
-
+from logger import logging
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
